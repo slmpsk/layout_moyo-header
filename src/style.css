@@ -1,3 +1,81 @@
 body {
   margin: 0;
+  min-width: 1024px;
+}
+
+.roboto_font {
+  font-family: Roboto, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.logo {
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  padding-left: 0;
+}
+
+ul a {
+  height: 15px;
+  font-size: 12px;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+  padding-top: 23.5px;
+  padding-bottom: 20.5px;
+  display: inline-block;
+}
+
+.nav__link:hover {
+  color: #00acdc;
+}
+
+.nav__link:active {
+  color: #00acdc;
+}
+
+.list__style:not(.appleLink)::before {
+  content: '';
+  width: 16px;
+  display: inline-block;
+}
+
+.appleLink::after {
+  position: relative;
+  border-radius: 2px;
+  content: '';
+  width: 37px;
+  height: 4px;
+  top: -4px;
+  background-color: #00acdc;
+  display: block;
+}
+
+.is-active.apple {
+  color: #00acdc;
 }
