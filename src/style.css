@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  margin: 0 50px;
+  padding: 0 50px;
 }
 
 .nav {
@@ -58,12 +58,6 @@ ul a {
   color: #00acdc;
 }
 
-.list__style:not(.apple)::before {
-  content: '';
-  width: 16px;
-  display: inline-block;
-}
-
 .appleLink::after {
   position: absolute;
   border-radius: 2px;
@@ -78,4 +72,8 @@ ul a {
 .is-active {
   color: #00acdc;
   position: relative;
+}
+
+.list__style:not(.apple) {
+  margin-left: 20px;
 }
